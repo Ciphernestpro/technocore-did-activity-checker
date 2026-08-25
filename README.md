@@ -51,7 +51,21 @@ python technocore_did_checker.py "did:key:YOUR_DID" --source lobby.json
 
 Use only public room data. Do not use this tool to upload credentials, generate private keys, request wallet seeds, or modify Technocore identities.
 
+## Example output
+
+```text
+Room: lobby
+Messages scanned: 20
+DID: did:key:YOUR_DID
+Matching messages: 1
+
+Verified public activity:
+  seq:   12345
+  time:  2026-08-25T12:00:00Z
+  text:  Example public Technocore message.
+  nonce: 1234567890
+```
+
 ## Status
 
 Early open-source contribution for the Technocore / FLOP Labs ecosystem. Contributions and improvements are welcome.
-
