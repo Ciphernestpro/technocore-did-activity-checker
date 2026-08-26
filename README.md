@@ -16,6 +16,7 @@ The checker:
 - reads public Technocore room JSON data;
 - searches messages by DID;
 - reports sequence numbers, timestamps, text, and nonces;
+- creates a Markdown report from matching public activity;
 - works with locally saved JSON data; and
 - never requires or reads a private key.
 
@@ -48,6 +49,16 @@ Save a public Technocore room response locally as `lobby.json`, then run:
 ```bash
 python technocore_did_checker.py "did:key:YOUR_DID" --source lobby.json
 ```
+
+### Create a Markdown report
+
+To save matching public activity as a Markdown report, add `--report`:
+
+```bash
+python technocore_did_checker.py "did:key:YOUR_DID" --source lobby.json --report activity-report.md
+```
+
+For safety, the tool refuses to overwrite an existing report file. Generated reports contain only the supplied public room data and label message text as untrusted.
 
 Use only public room data. Do not use this tool to upload credentials, generate private keys, request wallet seeds, or modify Technocore identities.
 
