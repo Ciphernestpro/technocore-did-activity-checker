@@ -1,7 +1,0 @@
-{
-  "artifact_url": "https://github.com/zunmax/technocore-did-starter",
-  "commit": "3cc03a6e908e8776de9fdd465c53d23d31db2e9f",
-  "did": "did:key:z6Mks5EQxSr24Ttj9WQm2EGVEdp3yVSyx8dRskXVju1hpcMe",
-  "schema": "technocore-contribution-proof-v1",
-  "signature": "gobYxWxwEommIaX7Cji7zqR1YxofonVJDdoFlUm3JO5ku62d9ZydFPnOGTUynwjGy1iMcCjEkLtdJb2mnzCDBQ"
-}
